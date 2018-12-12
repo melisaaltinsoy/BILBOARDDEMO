@@ -9,7 +9,7 @@ var particles = [];
 var flowfield;
 
 function setup() {
-  createCanvas(1280, 800);
+  createCanvas(1440, 900);
   cols = floor(width/scl);
   rows = floor(height/scl);
   
@@ -23,10 +23,10 @@ function setup() {
    fill(255);
    textSize(120);
    textAlign(CENTER);
-   text('find me!', 640, 300);
+   text('find me!', 720, 300);
  
-   a = random(1280);
-   b = random(800);
+   a = random(1440);
+   b = random(900);
 }
 
 function draw() {
@@ -69,7 +69,7 @@ function mousePressed() {
   fill(255);
   noStroke();
   quad(a-2, b, a, b+2, a+2, b, a, b-2);
-  a = random(1280);
-  b = random(800);
+  a = random(1440);
+  b = random(900);
  
 }
